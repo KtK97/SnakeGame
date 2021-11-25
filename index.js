@@ -17,11 +17,11 @@ function initGame(){
   var name = 'Snake Game';
   var startText = 'Start the game by clicking SpaceBar';
   textSize(50);
-  fill(0);
+  fill(255);
   nameWidht = textWidth(name);
   
   text(name, (width - nameWidht)/2, height/2 - 40);
-  textSize(10);
+  textSize(13);
   startTextWidth = textWidth(startText);
   text(startText, (width - startTextWidth)/2, height/1.3);
   noLoop();
@@ -38,7 +38,7 @@ function startGame(){
 function runGame(){
   background(126);
   textSize(12);
-  fill(0);
+  fill(255);
   text("score: " + snake.tail.length, 1, 10);
   text("highscore: " + highscore, 1, 24);
 
@@ -67,10 +67,10 @@ function endGame(){
   msgWidht = textWidth(msg);
   scoreWidht = textWidth(score);
   
-  fill(0);
+  fill(255);
   text(msg, (width - msgWidht)/2, height/2 - 40);
   text(score, (width - scoreWidht)/2, height/2);
-  textSize(10);
+  textSize(13);
   endTextWidth = textWidth(endText);
   text(endText, (width - endTextWidth)/2, height/1.3 + 40);
   noLoop();
